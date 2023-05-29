@@ -1,7 +1,7 @@
-char estado= 0;
-int EnB= 9;
-int in4= 8;
-int in3= 7;
+char estado= 0; //El estado es para recibir la señal del bluethoot y dependiendo lo que se reciba de la app
+int EnB= 9; // 
+int in4= 8; // Pines prueba en uso para el bluethoot
+int in3= 7; //
 int in1 = 12;  // Pin que controla el sentido de giro Motor A
 int in2 = 13;  // Pin que controla el sentido de giro Motor A
  // Pin que controla la velocidad del  Motor A
@@ -81,6 +81,9 @@ if(estado=='q'){
  
  }
 
+ //Codigo para hacer bailar al carro siguiendo una secuencia 
+ //No se crean funciones antes debido a que solo es un ejemplo simple
+ 
  if(estado=='f'){   
   delay(500); 
   digitalWrite(in1, LOW);  
